@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | Voice Over AI Studio</title>
+  <meta name="description" content="Privacy Policy for Voice Over AI Studio.">
+  <link rel="stylesheet" href="/voiceover-public-site/assets/styles.css">
+</head>
+<body>
+  <header>
+    <div class="shell topbar">
+      <a class="brand" href="/voiceover-public-site/" aria-label="Voice Over AI Studio home">
+        <img class="brand-icon" src="/voiceover-public-site/assets/app-icon.png" alt="" width="44" height="44">
+        <span>Voice Over AI Studio</span>
+      </a>
+      <nav aria-label="Site navigation">
+        <a href="/voiceover-public-site/">Product</a>
+        <a href="/voiceover-public-site/privacy" aria-current="page">Privacy</a>
+        <a href="/voiceover-public-site/terms">Terms</a>
+        <a href="/voiceover-public-site/support">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="shell">
+      <section class="hero">
+        <div class="eyebrow">Privacy Policy</div>
+        <h1>Privacy Policy</h1>
+        <p class="lead">Voice Over AI Studio helps creators record, import, transcribe, edit, generate, and export voice-first media. This policy explains the data needed to run those workflows.</p>
+        <p class="meta">Effective date: September 17, 2026. Operator: Charactr Inc. Contact: <a href="mailto:support@voice-over.app">support@voice-over.app</a>.</p>
+      </section>
+
+      <article class="panel">
+        <h2>Data We Collect</h2>
+        <p>Voice Over AI Studio collects data only to provide app functionality, support purchases, protect the service, improve reliability, and respond to support requests. The app does not sell personal data and does not use data for third-party advertising or cross-app tracking.</p>
+
+        <h3>Account and identifiers</h3>
+        <ul>
+          <li>Email address for sign-in, account recovery, and support.</li>
+          <li>User ID, including Supabase Auth user IDs and account/profile identifiers.</li>
+        </ul>
+
+        <h3>User content</h3>
+        <ul>
+          <li>Audio Data, including recordings, imported source audio, cleanup/polish audio, narration audio, and voice samples the user chooses to submit.</li>
+          <li>Photos or videos selected by the user for import, Look-and-Voice workflows, export, or media handoff.</li>
+          <li>Other User Content, including transcripts, captions, project titles, edit metadata, prompt text, export settings, job metadata, and consent text for voice features.</li>
+        </ul>
+
+        <h3>Purchases</h3>
+        <ul>
+          <li>Purchase History for StoreKit subscriptions, consumables, entitlement sync, billing support, and restore-purchase behavior.</li>
+        </ul>
+
+        <h3>Analytics and diagnostics</h3>
+        <ul>
+          <li>Product analytics and Other Diagnostic Data from closed-vocabulary app events, such as recording, transcript, export, paywall, and onboarding funnel states. When you are signed in these events are associated with your account identifier; when signed out they use an anonymous per-install identifier.</li>
+          <li>Crash Data used to diagnose production stability defects.</li>
+        </ul>
+
+        <h2>How Data Is Used</h2>
+        <p>Account, media, transcript, job, purchase, and entitlement data is used for app functionality: authentication, cloud transcription, audio cleanup, voice generation, captions, exports, project storage, quota enforcement, purchase restoration, and support.</p>
+        <p>Product analytics is first-party only. The app disables PostHog autocapture and screen-view capture, and uses a per-install identifier that is associated with your account identifier when you sign in (and is anonymous when you are signed out). It sends only explicit app-functionality events. PostHog is not used for advertising, cross-app tracking, IDFA collection, or data-broker sharing.</p>
+
+        <h2>Processing and Storage</h2>
+        <p>Supabase stores account records, entitlement records, media metadata, job metadata, generated outputs, transcript/edit metadata, and consent logs where applicable. Uploaded source media and generated results are stored in private Supabase Storage buckets and accessed through short-lived signed URLs.</p>
+        <p>AI providers may process uploaded media, transcripts, prompts, voice samples, edit instructions, and selected settings only to create requested transcription, cleanup, polish, narration, caption, music, song, sound-effect, scene-understanding, or export outputs. Launch provider processing includes Supabase for authentication, database, storage, and Edge Function orchestration; ElevenLabs for transcription (Scribe), cleanup/polish, voice catalog, text-to-speech, speech-to-speech, music generation, sound-effect generation, and voice cloning only when those routes are enabled; Fish Audio for text-to-speech and voice cloning on the standard voice path; MiniMax for custom-song recording and text-to-speech, with MiniMax models served through GMI Cloud infrastructure so content sent to those features is processed on GMI Cloud; Cloudflare R2 for provider-staging media storage when video handoff is required; Apple for Sign in with Apple and StoreKit purchase processing; and Google for default text-to-speech narration (Gemini), voice-prompt generation (Gemini), song lyric drafting (Gemini), music generation (Lyria), and short-clip scene understanding (Gemini), where short clips sent for scene understanding may be retained by the provider for up to 30 days for abuse review and are not used to train models.</p>
+        <p>Before Voice Over AI Studio sends user-selected content to third-party AI providers, the app shows an AI Privacy Permission sheet that identifies what data will be sent and who receives it. Users can choose <strong>Allow This Time</strong> to continue or decline to stop the upload or AI request.</p>
+        <p>Third-party processing is subject to each provider’s applicable terms and privacy policy. The app requests permission before sending user-selected content for AI processing.</p>
+
+        <h2>Voice Cloning, Voice Biometrics, and Consent</h2>
+        <p>Voice cloning or voice-reuse features, when enabled, require explicit consent that the user owns or is authorized to use the sampled voice. Consent records may include the consent text/version, sample IDs, accepted timestamp, and provider policy version. The app can require liveness checks before clone training.</p>
+        <p>A cloned voice model is held by the provider that created it — ElevenLabs for premium clones, Fish Audio for standard clones — for the lifetime of the clone. You can request deletion of a cloned voice and revocation of its consent. A request does not confirm that consent was revoked or that the provider-side model was removed. Clone deletion and consent revocation are currently unavailable in the app; contact support for help with a deletion or revocation request.</p>
+        <p>Cloned voices and related voice biometric models are used only to provide user-requested voice features. Users can request revocation of voice-clone consent and deletion of associated cloned voices, samples, and generated assets.</p>
+
+        <h2>Retention</h2>
+        <ul>
+          <li>Account/profile records are retained until account deletion.</li>
+          <li>Uploaded source media is retained while the related job or project is active, then eligible for deletion.</li>
+          <li>Generated outputs are retained while the user keeps the project or result.</li>
+          <li>Entitlement and purchase records are retained as needed for account history, abuse prevention, tax/accounting, and support.</li>
+          <li>Consent logs are retained while the related voice feature or generated asset exists and as needed for compliance and support.</li>
+        </ul>
+
+        <h2>Your Choices</h2>
+        <p>Users can delete projects, restore purchases, and contact support to request cloned-voice deletion or consent revocation. Account deletion availability and recovery information are described below.</p>
+
+        <h2 id="delete">Account Deletion</h2>
+        <p>Use Settings to check account deletion availability and start deletion when available. Deletion is supported for eligible accounts. Accounts with unresolved uploads or generation work, including legacy R2-backed uploads, may remain held and cannot complete deletion yet. An unavailable status, an error, or an interrupted request does not confirm that deletion completed. An earlier deletion that needs recovery may keep local projects hidden until it is resolved.</p>
+        <p>Completion must be verified before we report that your account and associated private uploads, generated outputs, and cloned voices have been removed. Starting a request does not confirm completion. Sign-out and Reset sign-in do not delete your account or complete a pending deletion.</p>
+        <p>Deleting an account does not cancel an App Store subscription. Manage or cancel subscriptions through your Apple ID subscription settings.</p>
+        <p>To request help with account deletion, contact <a href="mailto:support@voice-over.app?subject=Voice%20Over%20AI%20Studio%20account%20deletion">support@voice-over.app</a> from the email address associated with the account.</p>
+
+        <h2>Tracking</h2>
+        <p>Voice Over AI Studio does not track users across other companies' apps or websites. The app does not use IDFA, advertising SDKs, or data brokers.</p>
+
+        <h2>Children's Privacy</h2>
+        <p>Voice Over AI Studio is not directed to children under 13 (or the minimum age required in your jurisdiction), and we do not knowingly collect personal data from them. If you believe a child has provided us personal data, contact <a href="mailto:support@voice-over.app">support@voice-over.app</a> and we will delete it.</p>
+
+        <h2>Changes</h2>
+        <p>We may update this policy as the app changes. Material changes will be reflected on this page.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="shell">Copyright 2026 Charactr Inc. Voice Over AI Studio is operated by Charactr Inc.</div>
+  </footer>
+</body>
+</html>
